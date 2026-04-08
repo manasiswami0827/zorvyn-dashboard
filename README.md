@@ -117,8 +117,10 @@ This project is deployed on **Vercel** for fast and reliable hosting.
 
 ## 📸 Screenshots
 
-<img width="1920" height="1020" alt="image" src="https://github.com/user-attachments/assets/2e363a57-c096-4dbe-91e3-67c5e5100487" />
-<img width="1920" height="1020" alt="image" src="https://github.com/user-attachments/assets/d3e920f2-81d0-4019-a0e6-75630df0006d" />
+<img width="1920" height="967" alt="Screenshot 2026-04-08 093204" src="https://github.com/user-attachments/assets/1b898822-089d-44b2-af79-2688e31f575a" />
+
+<img width="1920" height="967" alt="Screenshot 2026-04-08 093240" src="https://github.com/user-attachments/assets/1213f909-8751-455f-b5ca-5b6e0a4b98c6" />
+
 
 
 
