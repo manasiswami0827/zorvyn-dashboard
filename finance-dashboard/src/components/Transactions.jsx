@@ -63,18 +63,18 @@ function Transactions({ transactions, role }) {
           </div>
 
           {role !== "viewer" && (
-           <button 
-  className="btn-primary"
-  onClick={() => setShowForm(!showForm)}
->
-  <Plus size={16} />
-  {showForm ? "Close" : "Add"}
-</button>
+            <button
+              className="btn-primary"
+              onClick={() => setShowForm(!showForm)}
+            >
+              <Plus size={16} />
+              {showForm ? "Close" : "Add"}
+            </button>
 
           )}
         </div>
         {showForm && (
-          <AddTransactionForm/>
+          <AddTransactionForm />
         )}
         {/* CONTROLS */}
         {hasData && (
@@ -112,8 +112,19 @@ function Transactions({ transactions, role }) {
       {/* EMPTY STATE */}
       {!hasData && (
         <div className="empty-state">
-          <h3>No Transactions</h3>
-          <p>Add your first transaction to get started</p>
+          <p>No results for "{search}"</p>
+          <p>Try adjusting your search or filters</p>
+
+          <button
+            className="btn-primary"
+            onClick={() => {
+              setSearch("");
+              setFilter("all");
+            }}
+            style={{ marginTop: "12px" }}
+          >
+            Show All Transactions
+          </button>
         </div>
       )}
 

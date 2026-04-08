@@ -64,7 +64,6 @@ function AddTransactionForm({ onAddTransaction }) {
           </div>
         )}
 
-        {/* HEADER */}
         <div className="form-header">
           <div className="icon-box"><Plus size={20}/></div>
           <div>
@@ -134,138 +133,7 @@ function AddTransactionForm({ onAddTransaction }) {
         </form>
       </section>
 
-      {/* ✅ CSS INSIDE SAME FILE */}
-      <style>{`
-        .form-card {
-          max-width: 650px;
-          margin: auto;
-          padding: 20px;
-          border-radius: 14px;
-          background: rgba(255,255,255,0.7);
-          border: 1px solid rgba(0,0,0,0.05);
-          backdrop-filter: blur(10px);
-        }
-
-        body.dark .form-card {
-          background: rgba(30,41,59,0.9);
-          border-color: rgba(255,255,255,0.08);
-        }
-
-        .form-header {
-          display: flex;
-          gap: 12px;
-          align-items: center;
-          margin-bottom: 20px;
-        }
-
-        .icon-box {
-          padding: 10px;
-          border-radius: 10px;
-          background: #eef2ff;
-        }
-
-        body.dark .icon-box {
-          background: #2e5281;
-        }
-
-        .form-grid {
-          display: grid;
-          grid-template-columns: 1fr 1fr;
-          gap: 14px;
-        }
-
-        .form-group {
-          display: flex;
-          flex-direction: column;
-          gap: 5px;
-        }
-
-        .form-group.full {
-          grid-column: span 2;
-        }
-
-        input, select, textarea {
-          padding: 10px;
-          border-radius: 8px;
-          border: 1px solid #cbd5e1;
-          background: white;
-        }
-
-        body.dark input,
-        body.dark select,
-        body.dark textarea {
-          background: #1e293b;
-          border-color: #334155;
-          color: white;
-        }
-
-        input:hover, select:hover, textarea:hover {
-          border-color: #0e69d8;
-        }
-
-        body.dark input:hover,
-        body.dark select:hover,
-        body.dark textarea:hover {
-          border-color: #0e69d8;
-        }
-
-        .submit-btn {
-          grid-column: span 2;
-          padding: 12px;
-          border-radius: 8px;
-          border: none;
-          background: #0e69d8;
-          color: white;
-          font-weight: 600;
-          cursor: pointer;
-          transition: 0.2s;
-        }
-
-        .submit-btn:hover {
-          background: #0e69d8;
-        }
-
-        body.dark .submit-btn:hover {
-          background: #0e69d8;
-        }
-
-        .status {
-          padding: 10px;
-          border-radius: 8px;
-          margin-bottom: 15px;
-          font-size: 14px;
-        }
-
-        .success {
-          background: #dcfce7;
-          color: #166534;
-        }
-
-        .error {
-          background: #fee2e2;
-          color: #991b1b;
-        }
-
-        body.dark .success {
-          background: #14532d;
-          color: #bbf7d0;
-        }
-
-        body.dark .error {
-          background: #7f1d1d;
-          color: #fecaca;
-        }
-
-        @media (max-width: 640px) {
-          .form-grid {
-            grid-template-columns: 1fr;
-          }
-
-          .form-group.full {
-            grid-column: span 1;
-          }
-        }
-      `}</style>
+     
     </>
   );
 }

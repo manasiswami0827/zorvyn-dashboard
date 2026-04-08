@@ -1,0 +1,33 @@
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+/* VARIABLES*/ 
+:root {
+  --primary: #468ee5;
+  --primary-dark: #4a87d0;
+
+  --bg-light: #f4f6f9;
+  --bg-dark: #0f172a;
+
+  --text-light: #1e293b;
+  --text-dark: #f1f5f9;
+}
+
+body.dark {
+  background: var(--bg-dark);
+  color: var(--text-dark);
+}
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f4f6f9;
+  color: #1e293b;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+

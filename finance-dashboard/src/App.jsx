@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
-import { Sun, Moon } from "lucide-react";
 import Dashboard from "./components/Dashboard";
-import RoleSwitcher from "./components/Roleswitcher";
+import Layout from "./layout/Layout";
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
@@ -21,28 +20,14 @@ function App() {
   };
 
   return (
-    <div className="app">
-      {/* HEADER */}
-      <header className="header container">
-        <div className="header-left">
-          <h1 className="app-title">Zorvyn</h1>
-          <p className="app-subtitle">Track your income & expenses</p>
-        </div>
-
-        <div className="header-right">
-          <RoleSwitcher role={userRole} setRole={setUserRole} />
-
-          <button className="btn-secondary icon-btn" onClick={toggleDarkMode}>
-            {darkMode ? <Sun size={18} /> : <Moon size={18} />}
-          </button>
-        </div>
-      </header>
-
-      {/* MAIN */}
-      <main className="container">
-        <Dashboard role={userRole} />
-      </main>
-    </div>
+    <Layout
+      darkMode={darkMode}
+      toggleDarkMode={toggleDarkMode}
+      role={userRole}
+      setRole={setUserRole}
+    >
+      <Dashboard role={userRole} />
+    </Layout>
   );
 }
 

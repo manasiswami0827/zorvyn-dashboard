@@ -1,0 +1,174 @@
+/*  FORM CARD  */
+.form-card {
+  background: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  padding: 20px;
+  margin-bottom: 25px;
+  transition: 0.3s;
+}
+
+body.dark .form-card {
+  background: #1e293b;
+  border-color: #334155;
+}
+
+/*  HEADER  */
+.form-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.icon-box {
+  background: #e0e7ff;
+  color: #3877ca;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+body.dark .icon-box {
+  background: #334155;
+  color: #818cf8;
+}
+
+.form-header h3 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.form-header p {
+  margin: 0;
+  font-size: 13px;
+  opacity: 0.7;
+}
+
+/*  GRID  */
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+
+/* FULL WIDTH */
+.form-group.full {
+  grid-column: span 2;
+}
+
+/*  FORM GROUP  */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.form-group label {
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: #475569;
+}
+
+body.dark .form-group label {
+  color: #cbd5f5;
+}
+
+/*  INPUT  */
+.form-group input,
+.form-group select,
+.form-group textarea {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #cbd5e1;
+  outline: none;
+  font-size: 14px;
+  transition: 0.2s;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: #63a8f1;
+  box-shadow: 0 0 0 2px rgba(99,102,241,0.2);
+}
+
+/* DARK */
+body.dark input,
+body.dark select,
+body.dark textarea {
+  background: #0f172a;
+  border-color: #334155;
+  color: #e2e8f0;
+}
+
+/*  BUTTON  */
+.submit-btn {
+  grid-column: span 2;
+  padding: 12px;
+  background: #3877ca;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.submit-btn:hover {
+  background: #3877ca;
+}
+
+.submit-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/*  STATUS  */
+.status {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+
+.status.success {
+  background: #dcfce7;
+  color: #166534;
+}
+
+.status.error {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+/* DARK STATUS */
+body.dark .status.success {
+  background: rgba(34,197,94,0.15);
+  color: #4ade80;
+}
+
+body.dark .status.error {
+  background: rgba(239,68,68,0.15);
+  color: #f87171;
+}
+
+/*  RESPONSIVE  */
+@media (max-width: 768px) {
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .form-group.full {
+    grid-column: span 1;
+  }
+
+  .submit-btn {
+    grid-column: span 1;
+  }
+}

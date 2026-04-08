@@ -1,0 +1,306 @@
+
+/* BUTTONS */
+
+.btn-primary {
+  background: var(--primary);
+  color: white;
+  padding: 10px 16px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.btn-primary:hover {
+  background: var(--primary-dark);
+}
+
+
+/* KPI GRID */
+
+.kpi-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+  margin-top: 20px;
+}
+
+.kpi-card {
+  padding: 20px;
+  border-radius: 16px;
+  text-align: center;
+  transition: 0.25s ease;
+}
+
+.kpi-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+/* COLORS */
+.card-lavender {
+  background: #f5f3ff;
+  border: 1px solid #ddd6fe;
+}
+.card-lavender .amount {
+  color: #7c3aed;
+}
+
+.card-mint {
+  background: #ecfdfc;
+  border: 1px solid #bbf3f7;
+}
+.card-mint .amount {
+  color: #058596;
+}
+
+.card-coral {
+  background: #ffe7f9e7;
+  border: 1px solid #fcaeec;
+}
+.card-coral .amount {
+  color: #ad079de4;
+}
+
+/* DARK MODE */
+body.dark .card-lavender {
+  background: #2e2a4d;
+  border-color: #4c46a0;
+}
+body.dark .card-lavender .amount {
+  color: #c4b5fd;
+}
+
+body.dark .card-mint {
+  background: #23606de0;
+  border-color: #056e98;
+}
+body.dark .card-mint .amount {
+  color: #2685ae;
+}
+
+body.dark .card-coral {
+  background: #5b3258;
+  border-color: #fd51d5e3;
+}
+body.dark .card-coral .amount {
+  color: #ad079de4;
+}
+
+
+/* CHARTS */
+.charts-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+/* TABLE CARD */
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.75);
+  border-radius: 16px;
+  padding: 20px;
+  border: 1px solid #e5e7eb;
+  backdrop-filter: blur(10px);
+}
+
+body.dark .glass-card {
+  background: rgba(30, 41, 59, 0.9);
+  border-color: #334155;
+}
+
+/* TRANSACTIONS HEADER */
+.table-header {
+  margin-bottom: 20px;
+}
+
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.section-title {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.section-subtitle {
+  font-size: 13px;
+  color: #64748b;
+}
+
+/* CONTROLS */
+.controls {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  border: 1px solid #cbd5e1;
+  padding: 8px 10px;
+  border-radius: 10px;
+  background: white;
+  flex: 1;
+  min-width: 200px;
+}
+
+.search-box input {
+  border: none;
+  outline: none;
+  width: 100%;
+  background: transparent;
+}
+
+.form-input {
+  padding: 8px;
+  border-radius: 10px;
+  border: 1px solid #cbd5e1;
+}
+
+/* TABLE */
+.table-wrapper {
+  margin-top: 15px;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid #e2e8f0;
+}
+
+.transactions-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.transactions-table th {
+  text-align: left;
+  font-size: 13px;
+  font-weight: 600;
+  color: #64748b;
+  padding: 14px 12px;
+  background: #f8fafc;
+  position: sticky;
+  top: 0;
+}
+
+.transactions-table td {
+  padding: 14px 12px;
+  border-top: 1px solid #f1f5f9;
+  font-size: 14px;
+}
+
+.transactions-table tbody tr {
+  transition: 0.2s;
+}
+
+.transactions-table tbody tr:hover {
+  background: rgba(99, 102, 241, 0.05);
+}
+
+/* ALIGN */
+.right {
+  text-align: right;
+}
+
+/* BADGES */
+.category-badge,
+.type-badge {
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+
+.type-badge.income {
+  color: #2685ae;
+}
+
+
+.type-badge.expense {
+ 
+  color: #ad079de4;
+}
+
+/* AMOUNT */
+.amount {
+  font-weight: 600;
+}
+
+
+/* ACTION BUTTONS */
+.action-btn {
+  border: none;
+  padding: 6px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-left: 6px;
+  transition: 0.2s;
+}
+
+.action-btn.edit {
+  background: #e0fbfe;
+  color: #2e949b;
+}
+
+.action-btn.delete {
+  background: #fee2f9;
+  color: #b91ca4;
+}
+
+.action-btn:hover {
+  transform: scale(1.0);
+}
+
+
+/* EMPTY STATE */
+.empty-state {
+  text-align: center;
+  padding: 40px 20px;
+  opacity: 0.8;
+}
+
+.empty-state h3 {
+  margin-bottom: 8px;
+}
+
+.empty-state p {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+
+/* DARK MODE */
+
+body.dark .transactions-table {
+  background: #1e293b;
+}
+
+body.dark .transactions-table th {
+  background: #1e293b;
+  color: #94a3b8;
+}
+
+body.dark .transactions-table td {
+  border-color: #334155;
+}
+
+body.dark .transactions-table tbody tr:hover {
+  background: rgba(99, 102, 241, 0.1);
+}
+
+body.dark .search-box {
+  background: #1e293b;
+  border-color: #334155;
+}
+
+body.dark .form-input {
+  background: #1e293b;
+  border-color: #334155;
+  color: white;
+}

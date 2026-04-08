@@ -1,0 +1,59 @@
+/*  TABLET  */
+@media (max-width: 1024px) {
+  .kpi-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/*  MOBILE  */
+@media (max-width: 768px) {
+  .header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .header-right {
+    display: flex;
+    gap: 10px;
+  }
+
+  .header-right select {
+    flex: 1;
+  }
+
+  .icon-btn {
+    flex-shrink: 0;
+  }
+
+  .main-content {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .charts-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .table-wrapper {
+    overflow-x: auto;
+  }
+}
+
+/*  SMALL MOBILE  */
+@media (max-width: 480px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .btn-primary,
+  .btn-secondary {
+    width: 50%;
+    justify-content: end;
+  }
+}
